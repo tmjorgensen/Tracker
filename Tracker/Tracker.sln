@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{A01E2BE1-49CA-400C-B128-06CC9AFF9FA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{D90F7F3D-34EE-4925-9F69-298E91DD846D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{F7711E5F-B267-4C04-BFC5-CCAAC15D61F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Store", "Infrastructure.Store\Infrastructure.Store.csproj", "{2C9E9129-AC10-4538-A5EB-6DF50E49CBE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Store.SqlServerMigrations", "Infrastructure.Store.SqlServerMigrations\Infrastructure.Store.SqlServerMigrations.csproj", "{46D4D2FD-376A-4B78-9543-1D3F65BA7994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Store.MySqlMigrations", "Infrastructure.Store.MySqlMigrations\Infrastructure.Store.MySqlMigrations.csproj", "{3BC1A922-7B5F-4708-BFF1-10322BD818F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{6E986269-20F4-4933-90F8-3CCDF959AB1F}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\add-migration.bat = Scripts\add-migration.bat
+		Scripts\remove-migration.bat = Scripts\remove-migration.bat
+		Scripts\set-migration.bat = Scripts\set-migration.bat
+		Scripts\update-database.bat = Scripts\update-database.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A01E2BE1-49CA-400C-B128-06CC9AFF9FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A01E2BE1-49CA-400C-B128-06CC9AFF9FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A01E2BE1-49CA-400C-B128-06CC9AFF9FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A01E2BE1-49CA-400C-B128-06CC9AFF9FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D90F7F3D-34EE-4925-9F69-298E91DD846D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D90F7F3D-34EE-4925-9F69-298E91DD846D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D90F7F3D-34EE-4925-9F69-298E91DD846D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D90F7F3D-34EE-4925-9F69-298E91DD846D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7711E5F-B267-4C04-BFC5-CCAAC15D61F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7711E5F-B267-4C04-BFC5-CCAAC15D61F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7711E5F-B267-4C04-BFC5-CCAAC15D61F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7711E5F-B267-4C04-BFC5-CCAAC15D61F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C9E9129-AC10-4538-A5EB-6DF50E49CBE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C9E9129-AC10-4538-A5EB-6DF50E49CBE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C9E9129-AC10-4538-A5EB-6DF50E49CBE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C9E9129-AC10-4538-A5EB-6DF50E49CBE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D4D2FD-376A-4B78-9543-1D3F65BA7994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D4D2FD-376A-4B78-9543-1D3F65BA7994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D4D2FD-376A-4B78-9543-1D3F65BA7994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D4D2FD-376A-4B78-9543-1D3F65BA7994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BC1A922-7B5F-4708-BFF1-10322BD818F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC1A922-7B5F-4708-BFF1-10322BD818F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC1A922-7B5F-4708-BFF1-10322BD818F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC1A922-7B5F-4708-BFF1-10322BD818F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2940D8BE-C59A-4FB4-958F-22D83F2696CE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,64 @@
+﻿<!doctype html><html lang="en"><head><meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <meta name="description" content="Simple app that lets you track your commute times and view statistics about it." />
+    <meta name="keywords" content="commute,trips,tracking,statistics,location,time,dates" />
+    <title>@ViewData["Title"] - Commuter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen" />
+</head><body>
+    <div id="fauxBody">
+        <div id="app">
+            <header>
+                <h1>
+                    <a href="/">Tracker</a>
+                </h1>
+                <button type="button" id="mainMenuOpen" hidden></button>
+                <nav>
+                    <ul>
+                        @if (true)
+                        {
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/somewhere">Somewhere</a></li>
+                        }
+                    </ul>
+                </nav>
+                @if (false)
+                {
+                    <a href="#userInfo"></a>
+                }
+            </header>
+            <main>
+                @RenderBody()
+            </main>
+            <footer></footer>
+        </div>
+        <form id="signIn" class="modal" method="post" action="">
+            <a class="modalClose" hidden></a>
+            <div>
+                <h2>Please sign in</h2>
+                <fieldset>
+                    <legend>Social account</legend>
+                    <button name="provider" value="stuff" title="Sign in using Stuff">
+                        <span>Stuff</span>
+                    </button>
+                </fieldset>
+                <fieldset>
+                    <legend>Email and password</legend>
+                    <label>
+                        <span>Email</span>
+                        <input name="username" type="email" required placeholder="mail@example.com" />
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input name="password" type="password" required placeholder="password" />
+                    </label>
+                </fieldset>
+                <footer>
+                    <button>Sign in</button>
+                </footer>
+            </div>
+        </form>
+    </div>
+</body></html>
